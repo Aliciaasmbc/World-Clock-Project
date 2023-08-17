@@ -1,4 +1,17 @@
 function updateTime() {
+  //tahiti
+  let tahitiElement = document.querySelector("#tahiti");
+  if (tahitiElement) {
+    let tahitiDateElement = tahitiElement.querySelector(".date");
+    let tahitiTimeElement = tahitiElement.querySelector(".time");
+    let tahitiTime = moment().tz("Pacific/Tahiti");
+
+    tahitiDateElement.innerHTML = tahitiTime.format("MMMM Do YYYY");
+    tahitiTimeElement.innerHTML = tahitiTime.format(
+      "h:mm:ss [<small>]A[</small>]"
+    );
+  }
+
   //New York
   let newyorkElement = document.querySelector("#new-york");
   if (newyorkElement) {
@@ -21,6 +34,18 @@ function updateTime() {
 
     parisDateElement.innerHTML = parisTime.format("MMMM Do YYYY");
     parisTimeElement.innerHTML = parisTime.format(
+      "h:mm:ss [<small>]A[</small>]"
+    );
+  }
+  //bangkok
+  let bangkokElement = document.querySelector("#bangkok");
+  if (bangkokElement) {
+    let bangkokDateElement = bangkokElement.querySelector(".date");
+    let bangkokTimeElement = bangkokElement.querySelector(".time");
+    let bangkokTime = moment().tz("Asia/Bangkok");
+
+    bangkokDateElement.innerHTML = bangkokTime.format("MMMM Do YYYY");
+    bangkokTimeElement.innerHTML = bangkokTime.format(
       "h:mm:ss [<small>]A[</small>]"
     );
   }
