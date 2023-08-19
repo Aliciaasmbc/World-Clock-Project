@@ -1,8 +1,8 @@
 .container {
   max-width: 600px;
   margin: 60px auto;
-  background-color: white;
-  padding: 60px;
+  background-color: rgba(245, 220, 184, 0.8);
+  padding: 30px 15px 30px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 10px;
 }
@@ -13,25 +13,32 @@
   margin: 20px 0;
   padding: 30px 0;
   border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
+  color: #624c3e;
 }
 .city:last-child {
   border: none;
 }
 .date {
-  opacity: 0.7;
+  opacity: 0.9;
+  color: #624c3e;
 }
 
 .time {
   font-size: 48px;
   font-family: bold;
+  color: #624c3e;
 }
 .time small {
   font-size: 24px;
   line-height: 36px;
   vertical-align: middle;
+  color: #624c3e;
 }
 body {
-  background-color: #f9f7fe;
+  background: url(sources/worldmap.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #e2b37d;
   font-family: sans-serif;
 }
 
@@ -39,6 +46,7 @@ h1 {
   text-align: center;
   font-family: sans-serif;
   font-size: 36px;
+  color: #624c3e;
 }
 select {
   display: block;
@@ -50,6 +58,7 @@ select {
 h2 {
   margin: 0 0 10px;
   font-size: 28px;
+  color: #624c3e;
 }
 footer {
   text-align: center;
